@@ -69,7 +69,8 @@
 			var positionX = 0
 			var points = 0
 			var speed = 10
-			
+			var colorStr = "rgb(255, 0, 255)";
+			box.css("background-color", colorStr);
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -97,6 +98,7 @@
 				changeBoxText(points);	
 				points = points + 1;
 				speed = 3 * points + 10;
+
 			};
 
 
